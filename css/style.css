@@ -1,0 +1,78 @@
+.img-card-fit {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.img-cont {
+	height: 200px;
+	overflow: hidden;
+	background-color: beige;
+}
+
+.card-content {
+	height: 150px;
+	overflow: auto;
+}
+
+main {
+	min-height: calc(100vh - 100px);
+}
+
+.checked {
+	color: orange;
+}
+
+.offcanvas-top {
+	height: fit-content;
+}
+
+.genres-and-btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+.genres-and-btn .dropdown-menu li{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 0px 10px;
+	margin: 5px 0;
+}
+
+#btnMore{
+	padding-right: 10px;
+}
+/** ====== Lista de Peliculas ====== **/
+
+.list-item {
+	background-color: rgb(44, 44, 48);
+	color: rgb(231, 231, 231);
+	list-style: none;
+	padding: 20px;
+	margin-top: 15px;
+	cursor: pointer;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (width <= 1048px) {
+		flex-direction: column;
+		align-items: start;
+	}
+}
+
+.list-item p {
+	color: rgb(114, 114, 114);
+}
+
+/* STARS */
+
+.checked {
+	color: rgb(255, 183, 48);
+}
+
+.list-group {
+	display: flex;
+}
